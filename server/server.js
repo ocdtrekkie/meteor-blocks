@@ -89,6 +89,7 @@ Meteor.methods({
   },
   newScene: function () {
     var id = Scenes.insert({
+      _id: "build1",
       createdAt: new Date(),
       backgroundColor: "#fff",
       groundColor: "#4a9"

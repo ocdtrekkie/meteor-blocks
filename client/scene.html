@@ -47,33 +47,18 @@
 <template name="controls">
 	<div class="controls">
 		<h1>
-			<a href="#/">
-				<span class="glyphicon glyphicon-home"></span>
-				Meteor Blocks
-			</a>
+			<span class="glyphicon glyphicon-home"></span>
+			Meteor Blocks
 		</h1>
-
-		<h2>Scene ID</h2>
-		<p><a href="{{sceneUrl}}">{{sceneId}}</a></p>
-
-		{{#if frozen}}
-			<h2>Make Your Own</h2>
-			<p>
-				<button class="clone btn btn-primary">Edit a Copy</button>
-			</p>
-		{{/if}}
 
 		<h2>Controls</h2>
 		<p>
-			{{#unless frozen}}
-				Click to place a block <br />
-				Right-click to delete one <br />
-			{{/unless}}
+			Click to place a block <br />
+			Right-click to delete one <br />
 			Drag to rotate view <br />
 			Scroll to zoom
 		</p>
 
-		{{#unless frozen}}
 		<button class="clear-boxes btn btn-sm btn-default">
 			Clear all blocks</button>
 
@@ -95,23 +80,6 @@
 				{{/each}}
 			</div>
 		</div>
-		{{/unless}}
-
-		{{#if frozen}}
-			<h2>Share</h2>
-			<p>
-				{{#if screenshot}}
-					<img src="{{screenshot}}" class="screenshot" />
-				{{/if}}
-			</p>
-			<button class='btn btn-primary btn-sm facebook'>Share on Facebook</button>
-		{{else}}
-			<h2>Collaborate</h2>
-			<p>Anyone can collaborate on this scene if they go to this page.</p>
-			<p>Click publish to save this version and publish it to the front page.</p>
-			<button class="freeze btn btn-sm btn-default">Publish</button>
-			<button class="clone btn btn-sm btn-default">Make a Copy</button>
-		{{/if}}
 
 		<div class="github-link">
 			<a href="http://git.io/meteor3d">See the code on GitHub</a>

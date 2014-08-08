@@ -6,7 +6,7 @@ var triggerGoogleAnalytics = function () {
 
 var RouterClass = Backbone.Router.extend({
   routes: {
-    "": "home",
+    "": "scene",
     "scene/:_id": "scene"
   },
 
@@ -19,6 +19,7 @@ var RouterClass = Backbone.Router.extend({
   scene: function (sceneId) {
     triggerGoogleAnalytics();
     var self = this;
+    sceneId = "build1";
 
     Session.set("loading", true);
 
@@ -38,7 +39,9 @@ var RouterClass = Backbone.Router.extend({
           Session.set("loading", false);
         });
       } else {
-        self.navigate("");
+        Meteor.call("newScene", function (error, newId) {
+	  self.navigate("/scene/build1", { trigger: true });
+	});
       }
     });
   }
