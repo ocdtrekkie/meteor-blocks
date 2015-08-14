@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Outer_x0020_Glow_x0020_5_x0020_pt{fill:none;}
+	.Blue_x0020_Neon{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Chrome_x0020_Highlight{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Jive_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+	.st0{fill:#D1D1D1;}
+	.st1{fill:url(#SVGID_2_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="4.489659e-011" y2="-1">
+	<stop  offset="0" style="stop-color:#656565"/>
+	<stop  offset="0.618" style="stop-color:#1B1B1B"/>
+	<stop  offset="0.6292" style="stop-color:#545454"/>
+	<stop  offset="0.9831" style="stop-color:#3E3E3E"/>
+</linearGradient>
+<polygon class="st0" points="127.5,48.6 127.2,48.2 60,45.5 44.8,58.1 44.8,58.1 31.5,69 31.5,69 12.8,84.3 12.8,84.3 10.7,85.9 
+	126.1,110.1 127,68.1 127,68.1 127.5,48.6 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="85.3775" y1="104.9544" x2="54.5181" y2="20.1691">
+	<stop  offset="0" style="stop-color:#3F9D88"/>
+	<stop  offset="1" style="stop-color:#48B49D"/>
+</linearGradient>
+<polygon class="st1" points="126.5,24 126.2,23.5 53.4,20.6 36.9,34.2 36.9,34.2 22.4,46 22.4,46 2.3,62.6 2.3,62.6 0,64.4 
+	124.9,90.6 126,45.1 126,45.1 126.5,24 "/>
+</svg>
