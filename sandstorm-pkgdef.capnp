@@ -17,22 +17,55 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 1,  # Increment this for every release.
+    appTitle = (defaultText = "Meteor Blocks"),
+
+    appVersion = 2,  # Increment this for every release.
+
+    appMarketingVersion = (defaultText = "1.0.1"),
 
     actions = [
       # Define your "new document" handlers here.
       ( title = (defaultText = "New Blocks Model"),
+        nounPhrase = (defaultText = "model"),
         command = .myCommand
         # The command to run when starting for the first time. (".myCommand"
         # is just a constant defined at the bottom of the file.)
       )
     ],
 
-    continueCommand = .myCommand
+    continueCommand = .myCommand,
     # This is the command called to start your app back up after it has been
     # shut down for inactivity. Here we're using the same command as for
     # starting a new instance, but you could use different commands for each
     # case.
+
+    metadata = (
+       icons = (
+         appGrid = (svg = embed "app-graphics/meteorblocks-128.svg"),
+         grain = (svg = embed "app-graphics/meteorblocks-24.svg"),
+         market = (svg = embed "app-graphics/meteorblocks-150.svg"),
+       ),
+
+       website = "http://3d.meteor.com/",
+       codeUrl = "https://github.com/ocdtrekkie/meteor-blocks",
+       license = (openSource = mit),
+       categories = [graphics],
+
+       author = (
+         contactEmail = "inbox@jacobweisz.com",
+         pgpSignature = embed "pgp-signature",
+         upstreamAuthor = "Sashko Stubailo",
+       ),
+       pgpKeyring = embed "pgp-keyring",
+
+       description = (defaultText = embed "description.md"),
+
+       screenshots = [
+         (width = 448, height = 364, png = embed "sandstorm-screenshot.png")
+       ],
+
+       changeLog = (defaultText = embed "CHANGELOG.md"),
+    ),
   ),
 
   sourceMap = (
