@@ -2,3 +2,5 @@
 config.js
 analytics.js
 packages
+.meteor-spk
+node_modules

@@ -19,9 +19,9 @@ const pkgdef :Spk.PackageDefinition = (
 
     appTitle = (defaultText = "Meteor Blocks"),
 
-    appVersion = 2,  # Increment this for every release.
+    appVersion = 3,  # Increment this for every release.
 
-    appMarketingVersion = (defaultText = "1.0.1"),
+    appMarketingVersion = (defaultText = "1.0.2"),
 
     actions = [
       # Define your "new document" handlers here.
@@ -46,7 +46,7 @@ const pkgdef :Spk.PackageDefinition = (
          market = (svg = embed "app-graphics/meteorblocks-150.svg"),
        ),
 
-       website = "http://3d.meteor.com/",
+       website = "https://github.com/ocdtrekkie/meteor-blocks",
        codeUrl = "https://github.com/ocdtrekkie/meteor-blocks",
        license = (openSource = mit),
        categories = [graphics],
@@ -59,6 +59,8 @@ const pkgdef :Spk.PackageDefinition = (
        pgpKeyring = embed "pgp-keyring",
 
        description = (defaultText = embed "description.md"),
+
+       shortDescription = (defaultText = "Voxel editor"),
 
        screenshots = [
          (width = 448, height = 364, png = embed "sandstorm-screenshot.png")
